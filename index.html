@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Todo List</title>
+</head>
+
+<body>
+  <header>
+    <h1>Todo List</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="add-task-form">
+        <h2>Add Task</h2>
+        <form id="addTaskForm">
+          <label for="titleInput">Title:</label>
+          <input type="text" id="titleInput" required>
+
+          <label for="dateInput">Date:</label>
+          <input type="date" id="dateInput" required>
+
+          <label for="timeInput">Time: <div id="currentTime"></div></label>
+          <input type="time" id="timeInput" required>
+
+          <label for="repetitionTypeInput">Repetition Type:</label>
+          <select id="repetitionTypeInput">
+            <option value="none">None</option>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="weekdays">Weekdays</option>
+            <option value="weekends">Weekends</option>
+            <option value="every2weeks">Every 2 weeks</option>
+            <option value="every3months">Every 3 months</option>
+            <option value="monthly">Monthly</option>
+            <option value="yearly">Yearly</option>
+          </select>
+
+          <label for="repetitionEndDateInput">Repetition End Date:</label>
+          <input type="date" id="repetitionEndDateInput">
+
+          <label for="descriptionInput">Description:</label>
+          <textarea id="descriptionInput"></textarea>
+
+          <button type="submit">Add Task</button>
+        </form>
+      </div>
+
+      <div class="task-list">
+        <h2>Task List</h2>
+        <div id="taskList"></div>
+      </div>
+    </div>
+  </main>
+ 
+  <script src="todo.js"></script>
+  <script>
+ const todoList = new TodoList();
+
+document.getElementById("addTaskForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const titleInput = document.getElementById("titleInput");
+  const dateInput = document.getElementById("dateInput");
+  const timeInput = document.getElementById("timeInput");
+  const repetitionTypeInput = document.getElementById("repetitionTypeInput");
+  const repetitionEndDateInput = document.getElementById("repetitionEndDateInput");
+  const descriptionInput = document.getElementById("descriptionInput");
+
+  const title = titleInput.value;
+  const date = dateInput.value;
+  const time = timeInput.value;
+  const repetitionType = repetitionTypeInput.value;
+  const repetitionEndDate = repetitionEndDateInput.value;
+  const description = descriptionInput.value;
+
+  todoList.addTask(title, date, time, repetitionType, repetitionEndDate, description);
+});
+  </script>
+</body>
+
+</html>
