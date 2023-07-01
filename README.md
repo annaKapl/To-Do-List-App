@@ -10,7 +10,6 @@ This is a JavaScript program that allows you to create a todo list. It provides 
 - [Prerequisites](#prerequisites)
 - [Contributing](#contributing)
 - [File Structure](#file-structure)
-- [Test Screenshoot](#test-screenshoot)
 - [Dependencies](#dependencies)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
@@ -21,8 +20,8 @@ This is a JavaScript program that allows you to create a todo list. It provides 
 
 To install the program, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repository.git`
-2. Navigate to the project directory: `cd your-repository`
+1. Clone the repository: `git clone [https://github.com/your-username/your-repository.git](https://github.com/annaKapl/To-Do-List-App)`
+2. Navigate to the project directory: `cd To-Do-List`
 3. Open the `index.html` file in a web browser.
 
 
@@ -30,13 +29,6 @@ To install the program, follow these steps:
 
 To run the Todo List application, you need a web browser with JavaScript support.
 
-## Installation
-
-To install the program, follow these steps:
-
-1. Clone the repository: `git clone https://github.com/your-username/your-repository.git`
-2. Navigate to the project directory: `cd your-repository`
-3. Open the `index.html` file in a web browser.
 
 ## Usage
 
@@ -61,26 +53,6 @@ The program consists of the following files:
 - `style.css`: The CSS file that defines the styling for the user interface.
 - `todo.js`: The JavaScript file that implements the TodoList class and provides the functionality for managing tasks.
 
-## Test Screenshoot
-1.Clear page 
-![Alt text](photo_2023-07-01_18-47-52.jpg)
-2.Fill data of task
-![Alt text](photo_2023-07-01_18-47-09.jpg)
-3.Add task
-![Alt text](photo_2023-07-01_18-47-13.jpg)
-4.Task completed
-![Alt text](photo_2023-07-01_18-47-14.jpg)
-5.Create anoter task
-![Alt text](photo_2023-07-01_18-47-16.jpg)
-6.Add another task
-![Alt text](photo_2023-07-01_18-47-17.jpg)
-7.Complte task by user 
-![(photo_2023-07-01_18-47-17.jpg)]
-8.Delete task 
-![Alt text](delete1.jpg)
-![Alt text](delete2.jpg)
-9. Edit task
-![Alt text](<edit task.jpg>)
 
 
 ## Dependencies
