@@ -13,7 +13,7 @@ This is a JavaScript program that allows you to create a todo list. It provides 
 - [Dependencies](#dependencies)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
-- [Project author](#project author)
+- [Project author](#projectauthor)
 
 
 ## Installation
